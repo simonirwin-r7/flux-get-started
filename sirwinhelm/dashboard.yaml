@@ -1,0 +1,11 @@
+---
+apiVersion: flux.weave.works/v1beta1
+kind: HelmRelease
+metadata:
+  name: dashboard
+  namespace: demo
+spec:
+  releaseName: dashboard
+  chart:
+    name: stable/kubernetes-dashboard
+    version: 1.4.0
